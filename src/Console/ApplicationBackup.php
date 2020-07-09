@@ -69,7 +69,7 @@ class ApplicationBackup
      */
     protected function makeBackupDirectory(string $dir)
     {
-        $this->filesystem->ensureDirectoryExists($dir, null, true);
+        $this->filesystem->ensureDirectoryExists($dir, 0755, true);
     }
 
     /**
